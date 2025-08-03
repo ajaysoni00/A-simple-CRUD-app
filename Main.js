@@ -6,7 +6,7 @@ import { connectDB } from "./config/database.js";
 connectDB();
 //Express App
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 //Middlewares
 app.use(express.static("public"));
